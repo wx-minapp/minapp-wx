@@ -498,7 +498,7 @@ declare namespace wx {
    *         x: '',
    *         y: ''
    *       },
-   *       header:{ 
+   *       header:{
    *         'content-type': 'application/json'
    *       },
    *       protocols: ['protocol1'],
@@ -1057,12 +1057,12 @@ declare namespace wx {
        *
        * **orientation参数说明：**
        *
-       *   枚举值           |  说明           
+       *   枚举值           |  说明
        * -------------------|-----------------
-       *   up               |  默认           
-       *   down             |  180度旋转      
-       *   left             |  逆时针旋转90度 
-       *   right            |  顺时针旋转90度 
+       *   up               |  默认
+       *   down             |  180度旋转
+       *   left             |  逆时针旋转90度
+       *   right            |  顺时针旋转90度
        *   up-mirrored      | 同up，但水平翻转
        *   down-mirrored    |同down，但水平翻转
        *   left-mirrored    |同left，但垂直翻转
@@ -1224,14 +1224,14 @@ declare namespace wx {
    *     ```javascript
    *     wx.startRecord({
    *       success: function(res) {
-   *         var tempFilePath = res.tempFilePath 
+   *         var tempFilePath = res.tempFilePath
    *       },
    *       fail: function(res) {
    *          //录音失败
    *       }
    *     })
    *     setTimeout(function() {
-   *       //结束录音  
+   *       //结束录音
    *       wx.stopRecord()
    *     }, 10000)
    *     ```
@@ -1246,17 +1246,17 @@ declare namespace wx {
    *
    * **其中，采样率和码率有一定要求，具体有效值如下：：**
    *
-   *   采样率  |  编码码率         
+   *   采样率  |  编码码率
    * ----------|-------------------
-   *   8000    |  16000 ~ 48000    
-   *   11025   |  16000 ~ 48000    
-   *   12000   |  24000 ~ 64000    
-   *   16000   |  24000 ~ 96000    
-   *   22050   |  32000 ~ 128000   
-   *   24000   |  32000 ~ 128000   
-   *   32000   |  48000 ~ 192000   
-   *   44100   |  64000 ~ 320000   
-   *   48000   |  64000 ~ 320000   
+   *   8000    |  16000 ~ 48000
+   *   11025   |  16000 ~ 48000
+   *   12000   |  24000 ~ 64000
+   *   16000   |  24000 ~ 96000
+   *   22050   |  32000 ~ 128000
+   *   24000   |  32000 ~ 128000
+   *   32000   |  48000 ~ 192000
+   *   44100   |  64000 ~ 320000
+   *   48000   |  64000 ~ 320000
    *
    * audioSource 有效值：
    *
@@ -1755,7 +1755,7 @@ declare namespace wx {
    *
    * **errcode 说明：**
    *
-   *   errCode   |  说明   
+   *   errCode   |  说明
    * ------------|---------
    *   10001     | 系统错误
    *   10002     | 网络错误
@@ -1984,7 +1984,7 @@ declare namespace wx {
    *
    * **errCode 说明：**
    *
-   *   errCode   |  说明   
+   *   errCode   |  说明
    * ------------|---------
    *   10001     | 系统错误
    *   10002     | 网络错误
@@ -2221,13 +2221,13 @@ declare namespace wx {
    *
    * **audioSource 有效值：：**
    *
-   *   值           |  说明                              |  支持平台               
+   *   值           |  说明                              |  支持平台
    * ---------------|------------------------------------|-------------------------
-   *   auto         |自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风|  iOS/Android/devtools   
-   *   buildInMic   |  手机麦克风                        |  iOS                    
-   *   headsetMic   |  耳机麦克风                        |  iOS                    
-   *   mic          |麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风|  Android                
-   *   camcorder    |  摄像头的麦克风                    |  Android                
+   *   auto         |自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风|  iOS/Android/devtools
+   *   buildInMic   |  手机麦克风                        |  iOS
+   *   headsetMic   |  耳机麦克风                        |  iOS
+   *   mic          |麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风|  Android
+   *   camcorder    |  摄像头的麦克风                    |  Android
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/getAvailableAudioSources.html#wxgetavailableaudiosourcesobject
    */
   function getAvailableAudioSources(OBJECT: getAvailableAudioSources.Param): void
@@ -3649,7 +3649,7 @@ declare namespace wx {
    *     ```javascript
    *     try {
    *     	wx.setStorageSync('key', 'value')
-   *     } catch (e) {	
+   *     } catch (e) {
    *     }
    *     ```
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/data.html#wxsetstoragesynckeydata
@@ -3704,7 +3704,7 @@ declare namespace wx {
    *       key: 'key',
    *       success: function(res) {
    *       	console.log(res.data)
-   *       } 
+   *       }
    *     })
    *     ```
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/data.html#wxgetstorageobject
@@ -3867,7 +3867,7 @@ declare namespace wx {
    *       key: 'key',
    *       success: function(res) {
    *         console.log(res.data)
-   *       } 
+   *       }
    *     })
    *     ```
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/data.html#wxremovestorageobject
@@ -4744,13 +4744,13 @@ declare namespace wx {
        *
        * **networkType 有效值：**
        *
-       *   值        |  说明               
+       *   值        |  说明
        * ------------|---------------------
-       *   wifi      |  wifi 网络          
-       *   2g        |  2g 网络            
-       *   3g        |  3g 网络            
-       *   4g        |  4g 网络            
-       *   none      |  无网络             
+       *   wifi      |  wifi 网络
+       *   2g        |  2g 网络
+       *   3g        |  3g 网络
+       *   4g        |  4g 网络
+       *   none      |  无网络
        *   unknown   |Android下不常见的网络类型
        */
       networkType: string
@@ -6031,7 +6031,7 @@ declare namespace wx {
    *
    *     ```javascript
    *     wx.createBLEConnection({
-   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 
+   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接
    *       deviceId: deviceId,
    *       success: function (res) {
    *         console.log(res)
@@ -6198,7 +6198,7 @@ declare namespace wx {
    *
    *     ```javascript
    *     wx.getBLEDeviceServices({
-   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 
+   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接
    *       deviceId: deviceId,
    *       success: function (res) {
    *         console.log('device services:', res.services)
@@ -6558,7 +6558,7 @@ declare namespace wx {
    *     ```javascript
    *     wx.notifyBLECharacteristicValueChange({
    *       state: true, // 启用 notify 功能
-   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接  
+   *       // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接
    *       deviceId: deviceId,
    *       // 这里的 serviceId 需要在上面的 getBLEDeviceServices 接口中获取
    *       serviceId: serviceId,
@@ -7096,10 +7096,10 @@ declare namespace wx {
    *
    * **回调结果：**
    *
-   *   回调类型  |  errMsg           |  说明                 
+   *   回调类型  |  errMsg           |  说明
    * ------------|-------------------|-----------------------
-   *   success   |  ok               |  添加成功             
-   *   fail      |  fail cancel      |  用户取消操作         
+   *   success   |  ok               |  添加成功
+   *   fail      |  fail cancel      |  用户取消操作
    *   fail      |  fail ${detail}   |调用失败，detail 加上详细信息
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/phone-contact.html#wxaddphonecontactobject
    */
@@ -7341,16 +7341,16 @@ declare namespace wx {
        *
        * 每个接口调用的时候，都会返回 `errCode` 字段。
        *
-       *   错误码  |  说明                     
+       *   错误码  |  说明
        * ----------|---------------------------
-       *   0       |  Ok                       
-       *   13000   |  当前设备不支持 NFC       
+       *   0       |  Ok
+       *   13000   |  当前设备不支持 NFC
        *   13001   |当前设备支持 NFC，但系统NFC开关未开启
        *   13002   |当前设备支持 NFC，但不支持HCE
-       *   13003   |  AID 列表参数格式错误     
+       *   13003   |  AID 列表参数格式错误
        *   13004   |未设置微信为默认NFC支付应用
-       *   13005   |  返回的指令不合法         
-       *   13006   |  注册 AID 失败            
+       *   13005   |  返回的指令不合法
+       *   13006   |  注册 AID 失败
        */
       errCode: number
     }
@@ -7803,21 +7803,21 @@ declare namespace wx {
    *
    * 每个接口调用的时候，都会返回 `errCode` 字段。
    *
-   *   错误码  |  说明                    |  备注                        
+   *   错误码  |  说明                    |  备注
    * ----------|--------------------------|------------------------------
-   *   0       |  ok                      |  正常                        
-   *   12000   |  not init                |  未先调用startWifi接口       
-   *   12001   |  system not support      |  当前系统不支持相关能力      
-   *   12002   |  password error          |  Wi-Fi 密码错误              
-   *   12003   |  connection timeout      |  连接超时                    
-   *   12004   |  duplicate request       |  重复连接 Wi-Fi              
+   *   0       |  ok                      |  正常
+   *   12000   |  not init                |  未先调用startWifi接口
+   *   12001   |  system not support      |  当前系统不支持相关能力
+   *   12002   |  password error          |  Wi-Fi 密码错误
+   *   12003   |  connection timeout      |  连接超时
+   *   12004   |  duplicate request       |  重复连接 Wi-Fi
    *   12005   |  wifi not turned on      |Android特有，未打开 Wi-Fi 开关
    *   12006   |  gps not turned on       |Android特有，未打开 GPS 定位开关
-   *   12007   |  user denied             |  用户拒绝授权链接 Wi-Fi      
-   *   12008   |  invalid SSID            |  无效SSID                    
-   *   12009   |  system config err       | 系统运营商配置拒绝连接 Wi-Fi 
+   *   12007   |  user denied             |  用户拒绝授权链接 Wi-Fi
+   *   12008   |  invalid SSID            |  无效SSID
+   *   12009   |  system config err       | 系统运营商配置拒绝连接 Wi-Fi
    *   12010   |  system internal error   |系统其他错误，需要在errmsg打印具体的错误原因
-   *   12011   |  weapp in background     |  应用在后台无法配置 Wi-Fi    
+   *   12011   |  weapp in background     |  应用在后台无法配置 Wi-Fi
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/wifi.html#wxgetconnectedwifiobject
    */
   function getConnectedWifi(OBJECT: getConnectedWifi.Param): void
@@ -7833,11 +7833,11 @@ declare namespace wx {
        *
        * **icon有效值：**
        *
-       *   有效值    |  说明                                 | 最低版本 
+       *   有效值    |  说明                                 | 最低版本
        * ------------|---------------------------------------|----------
-       *   success   |显示成功图标，此时 title 文本最多显示 7 个汉字长度。默认值|          
-       *   loading   |显示加载图标，此时 title 文本最多显示 7 个汉字长度。|          
-       *   none      |不显示图标，此时 title 文本最多可显示两行|  1.9.0   
+       *   success   |显示成功图标，此时 title 文本最多显示 7 个汉字长度。默认值|
+       *   loading   |显示加载图标，此时 title 文本最多显示 7 个汉字长度。|
+       *   none      |不显示图标，此时 title 文本最多可显示两行|  1.9.0
        */
       icon?: string
       /**
@@ -8198,11 +8198,11 @@ declare namespace wx {
        *
        * **animation.timingFunc 有效值：**
        *
-       *   值          |  说明             
+       *   值          |  说明
        * --------------|-------------------
        *   linear      |动画从头到尾的速度是相同的。
-       *   easeIn      |  动画以低速开始   
-       *   easeOut     |  动画以低速结束。 
+       *   easeIn      |  动画以低速开始
+       *   easeOut     |  动画以低速结束。
        *   easeInOut   |动画以低速开始和结束。
        */
       animation?: ParamPropAnimation
@@ -9045,13 +9045,13 @@ declare namespace wx {
        *
        * **timingFunction 有效值：**
        *
-       *   值            |  说明                    
+       *   值            |  说明
        * ----------------|--------------------------
        *   linear        |动画从头到尾的速度是相同的
        *   ease          |动画以低速开始，然后加快，在结束前变慢
-       *   ease-in       |  动画以低速开始          
-       *   ease-in-out   |  动画以低速开始和结束    
-       *   ease-out      |  动画以低速结束          
+       *   ease-in       |  动画以低速开始
+       *   ease-in-out   |  动画以低速开始和结束
+       *   ease-out      |  动画以低速结束
        *   step-start    |动画第一帧就跳至结束状态直到结束
        *   step-end      |动画一直保持开始状态，最后一帧跳到结束状态
        *
@@ -9349,7 +9349,7 @@ declare namespace wx {
    *       canvasId: 'myCanvas',
    *       success: function(res) {
    *         console.log(res.tempFilePath)
-   *       } 
+   *       }
    *     })
    *     ```
    * @see https://developers.weixin.qq.com/miniprogram/dev/api/canvas/temp-file.html#wxcanvastotempfilepathobject-this
@@ -10270,10 +10270,10 @@ declare namespace wx {
    *
    * **回调结果：**
    *
-   *   回调类型  |  errMsg                                 |  说明                                    
+   *   回调类型  |  errMsg                                 |  说明
    * ------------|-----------------------------------------|------------------------------------------
-   *   success   |  requestPayment:ok                      |  调用支付成功                            
-   *   fail      |  requestPayment:fail cancel             |  用户取消支付                            
+   *   success   |  requestPayment:ok                      |  调用支付成功
+   *   fail      |  requestPayment:fail cancel             |  用户取消支付
    *   fail      |  requestPayment:fail (detail message)   |调用支付失败，其中 detail message 为后台返回的详细失败原因
    *
    * **Bug & Tip：**
@@ -10611,14 +10611,14 @@ declare namespace wx {
        *
        * **cardExt 说明：**
        *
-       *   参数                   |  类型     |  必填 |是否参与签名|  说明                                                                                                                       
+       *   参数                   |  类型     |  必填 |是否参与签名|  说明
        * -------------------------|-----------|-------|-----------|-----------------------------------------------------------------------------------------------------------------------------
        *   code                   |  String   |  否   |  是       |用户领取的 code，仅自定义 code 模式的卡券须填写，非自定义 code 模式卡券不可填写，[详情](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1451025056)
-       *   openid                 |  String   |  否   |  是       |  指定领取者的openid，只有该用户能领取。 bind_openid 字段为 true 的卡券必须填写，bind_openid 字段为 false 不可填写。         
-       *   timestamp              |  Number   |  是   |  是       |  时间戳，东八区时间,UTC+8，单位为秒                                                                                         
+       *   openid                 |  String   |  否   |  是       |  指定领取者的openid，只有该用户能领取。 bind_openid 字段为 true 的卡券必须填写，bind_openid 字段为 false 不可填写。
+       *   timestamp              |  Number   |  是   |  是       |  时间戳，东八区时间,UTC+8，单位为秒
        *   nonce_str              |  String   |  否   |  是       |随机字符串，由开发者设置传入，加强安全性（若不填写可能被重放请求）。随机字符串，不长于 32 位。推荐使用大小写字母和数字，不同添加请求的 nonce_str 须动态生成，若重复将会导致领取失败。
        *   fixed_begintimestamp   |  Number   |  否   |  否       |卡券在第三方系统的实际领取时间，为东八区时间戳（UTC+8,精确到秒）。当卡券的有效期类为 DATE_TYPE_FIX_TERM 时专用，标识卡券的实际生效时间，用于解决商户系统内起始时间和领取微信卡券时间不同步的问题。
-       *   outer_str              |  String   |  否   |  否       |  领取渠道参数，用于标识本次领取的渠道值。                                                                                   
+       *   outer_str              |  String   |  否   |  否       |  领取渠道参数，用于标识本次领取的渠道值。
        *   signature              |  String   |  是   |  -        |签名，商户将接口列表中的参数按照指定方式进行签名,签名方式使用 SHA1，具体签名方案参见：[卡券签名](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115)
        *
        * **注：cardExt 需进行 JSON 序列化为字符串传入**
@@ -10673,10 +10673,10 @@ declare namespace wx {
    *
    * **回调结果：**
    *
-   *   回调类型  |  errMsg                          |  说明                                    
+   *   回调类型  |  errMsg                          |  说明
    * ------------|----------------------------------|------------------------------------------
-   *   success   |  addCard:ok                      |  添加卡券成功                            
-   *   fail      |  addCard:fail cancel             |  用户取消添加卡券                        
+   *   success   |  addCard:ok                      |  添加卡券成功
+   *   fail      |  addCard:fail cancel             |  用户取消添加卡券
    *   fail      |  addCard:fail (detail message)   |添加卡券失败，其中 detail message 为后台返回的详细失败原因
    *
    * **示例代码：**
@@ -10935,11 +10935,11 @@ declare namespace wx {
        *
        * encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://developers.weixin.qq.com/miniprogram/dev/api/signature.html#加密数据解密算法)
        *
-       *   属性                       |  类型          |  说明             
+       *   属性                       |  类型          |  说明
        * -----------------------------|----------------|-------------------
        *   stepInfoList               |  ObjectArray   |用户过去三十天的微信运动步数
        *   stepInfoList[].timestamp   |  Number        |时间戳，表示数据对应的时间
-       *   stepInfoList[].step        |  Number        |  微信运动步数     
+       *   stepInfoList[].step        |  Number        |  微信运动步数
        */
       encryptedData: string
       /**
@@ -10983,23 +10983,23 @@ declare namespace wx {
    *
    * **返回值：**
    *
-   *   参数          |  类型     |  说明                    
+   *   参数          |  类型     |  说明
    * ----------------|-----------|--------------------------
-   *   miniProgram   |  Object   |  小程序帐号信息          
+   *   miniProgram   |  Object   |  小程序帐号信息
    *   plugin        |  Object   |插件帐号信息（仅在插件中调用时包含这一项）
    *
    * 其中， `miniProgram` 包含以下字段：
    *
-   *   参数    |  类型     |  说明        
+   *   参数    |  类型     |  说明
    * ----------|-----------|--------------
-   *   appId   |  String   | 小程序 appId 
+   *   appId   |  String   | 小程序 appId
    *
    * `plugin` 仅当在插件中调用时提供，它包含以下字段：
    *
-   *   参数      |  类型     |  说明       
+   *   参数      |  类型     |  说明
    * ------------|-----------|-------------
-   *   appId     |  String   |  插件 appId 
-   *   version   |  String   |  插件版本号 
+   *   appId     |  String   |  插件 appId
+   *   version   |  String   |  插件版本号
    *
    * **示例代码：**
    *
@@ -11262,9 +11262,9 @@ declare namespace wx {
        *
        * **supportMode 有效值：**
        *
-       *   值            |  说明         
+       *   值            |  说明
        * ----------------|---------------
-       *   fingerPrint   |  指纹识别     
+       *   fingerPrint   |  指纹识别
        *   facial        |人脸识别（暂未支持）
        *   speech        |声纹识别（暂未支持）
        */
@@ -11350,17 +11350,17 @@ declare namespace wx {
        *
        * 此数据为设备TEE中，将传入的challenge和TEE内其他安全信息组成的数据进行组装而来的JSON，对下述字段的解释如表2。例子如下：
        *
-       *   字段名    |  说明                                               
+       *   字段名    |  说明
        * ------------|-----------------------------------------------------
-       *   raw       |  调用者传入的challenge                              
+       *   raw       |  调用者传入的challenge
        *   fid       |（仅Android支持）本次生物识别认证的生物信息编号（如指纹识别则是指纹信息在本设备内部编号）
-       *   counter   |  防重放特征参数                                     
-       *   tee_n     |  TEE名称（如高通或者trustonic等）                   
-       *   tee_v     |  TEE版本号                                          
-       *   fp_n      |  指纹以及相关逻辑模块提供商（如FPC等）              
-       *   fp_v      |  指纹以及相关模块版本号                             
-       *   cpu_id    |  机器唯一识别ID                                     
-       *   uid       |  概念同Android系统定义uid，即应用程序编号           
+       *   counter   |  防重放特征参数
+       *   tee_n     |  TEE名称（如高通或者trustonic等）
+       *   tee_v     |  TEE版本号
+       *   fp_n      |  指纹以及相关逻辑模块提供商（如FPC等）
+       *   fp_v      |  指纹以及相关模块版本号
+       *   cpu_id    |  机器唯一识别ID
+       *   uid       |  概念同Android系统定义uid，即应用程序编号
        */
       resultJSON: string
       /**
@@ -11388,9 +11388,9 @@ declare namespace wx {
    *
    * **生物识别方式定义：**
    *
-   *   mode          |  说明         
+   *   mode          |  说明
    * ----------------|---------------
-   *   fingerPrint   |  指纹识别     
+   *   fingerPrint   |  指纹识别
    *   facial        |人脸识别（暂未支持）
    *   speech        |声纹识别（暂未支持）
    *
@@ -11432,9 +11432,9 @@ declare namespace wx {
        *
        * **checkAuthMode 有效值：**
        *
-       *   值            |  说明         
+       *   值            |  说明
        * ----------------|---------------
-       *   fingerPrint   |  指纹识别     
+       *   fingerPrint   |  指纹识别
        *   facial        |人脸识别（暂未支持）
        *   speech        |声纹识别（暂未支持）
        */
@@ -11789,9 +11789,9 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数    |  类型                                                                              |  定义              
+     *   参数    |  类型                                                                              |  定义
      * ----------|------------------------------------------------------------------------------------|--------------------
-     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  Gradient Object   
+     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  Gradient Object
      *
      * **语法：**
      *
@@ -11820,9 +11820,9 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数    |  类型                                                                              |  定义              
+     *   参数    |  类型                                                                              |  定义
      * ----------|------------------------------------------------------------------------------------|--------------------
-     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  Gradient Object   
+     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  Gradient Object
      *
      * **语法：**
      *
@@ -11851,12 +11851,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数      |  类型                                                                              |  范围    |  定义              
+     *   参数      |  类型                                                                              |  范围    |  定义
      * ------------|------------------------------------------------------------------------------------|----------|--------------------
      *   offsetX   |  Number                                                                            |          |阴影相对于形状在水平方向的偏移
      *   offsetY   |  Number                                                                            |          |阴影相对于形状在竖直方向的偏移
      *   blur      |  Number                                                                            |  0~100   |阴影的模糊级别，数值越大越模糊
-     *   color     |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |          |  阴影的颜色        
+     *   color     |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |          |  阴影的颜色
      *
      * **例子：**
      *
@@ -11935,7 +11935,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数 |  类型     |  定义     
+     *   参数 |  类型     |  定义
      * -------|-----------|-----------
      *   x0   |  Number   |起点的x坐标
      *   y0   |  Number   |起点的y坐标
@@ -11971,11 +11971,11 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数 |  类型     |  定义     
+     *   参数 |  类型     |  定义
      * -------|-----------|-----------
      *   x    |  Number   |圆心的x坐标
      *   y    |  Number   |圆心的y坐标
-     *   r    |  Number   |  圆的半径 
+     *   r    |  Number   |  圆的半径
      *
      * **例子：**
      *
@@ -12006,10 +12006,10 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数    |  类型                                                                              |  定义              
+     *   参数    |  类型                                                                              |  定义
      * ----------|------------------------------------------------------------------------------------|--------------------
      *   stop    |  Number(0-1)                                                                       |表示渐变点在起点和终点中的位置
-     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  渐变点的颜色      
+     *   color   |  [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/color.html)   |  渐变点的颜色
      *
      * **示例代码：**
      *
@@ -12041,7 +12041,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数        |  类型     |  说明           
+     *   参数        |  类型     |  说明
      * --------------|-----------|-----------------
      *   lineWidth   |  Number   |线条的宽度(单位是px)
      *
@@ -12091,7 +12091,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数      |  类型     |  范围                      |  说明        
+     *   参数      |  类型     |  范围                      |  说明
      * ------------|-----------|----------------------------|--------------
      *   lineCap   |  String   |  'butt'、'round'、'square' |线条的结束端点样式
      *
@@ -12144,7 +12144,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数       |  类型     |  范围                      |  说明        
+     *   参数       |  类型     |  范围                      |  说明
      * -------------|-----------|----------------------------|--------------
      *   lineJoin   |  String   |  'bevel'、'round'、'miter' |线条的结束交点样式
      *
@@ -12202,10 +12202,10 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数      |  类型     |  说明                         
+     *   参数      |  类型     |  说明
      * ------------|-----------|-------------------------------
      *   pattern   |  Array    |一组描述交替绘制线段和间距（坐标空间单位）长度的数字
-     *   offset    |  Number   |  虚线偏移量                   
+     *   offset    |  Number   |  虚线偏移量
      *
      * **例子：**
      *
@@ -12231,7 +12231,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数         |  类型     |  说明     
+     *   参数         |  类型     |  说明
      * ---------------|-----------|-----------
      *   miterLimit   |  Number   |最大斜接长度
      *
@@ -12296,12 +12296,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数     |  类型     |  说明          
+     *   参数     |  类型     |  说明
      * -----------|-----------|----------------
      *   x        |  Number   |矩形路径左上角的x坐标
      *   y        |  Number   |矩形路径左上角的y坐标
-     *   width    |  Number   | 矩形路径的宽度 
-     *   height   |  Number   | 矩形路径的高度 
+     *   width    |  Number   | 矩形路径的宽度
+     *   height   |  Number   | 矩形路径的高度
      *
      * **例子：**
      *
@@ -12324,12 +12324,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数     |  类型     |  说明          
+     *   参数     |  类型     |  说明
      * -----------|-----------|----------------
      *   x        |  Number   |矩形路径左上角的x坐标
      *   y        |  Number   |矩形路径左上角的y坐标
-     *   width    |  Number   | 矩形路径的宽度 
-     *   height   |  Number   | 矩形路径的高度 
+     *   width    |  Number   | 矩形路径的宽度
+     *   height   |  Number   | 矩形路径的高度
      *
      * **例子：**
      *
@@ -12351,12 +12351,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数     |  类型     |  范围 |  说明          
+     *   参数     |  类型     |  范围 |  说明
      * -----------|-----------|-------|----------------
      *   x        |  Number   |       |矩形路径左上角的x坐标
      *   y        |  Number   |       |矩形路径左上角的y坐标
-     *   width    |  Number   |       | 矩形路径的宽度 
-     *   height   |  Number   |       | 矩形路径的高度 
+     *   width    |  Number   |       | 矩形路径的宽度
+     *   height   |  Number   |       | 矩形路径的高度
      *
      * **例子：**
      *
@@ -12372,12 +12372,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数     |  类型     |  说明          
+     *   参数     |  类型     |  说明
      * -----------|-----------|----------------
      *   x        |  Number   |矩形区域左上角的x坐标
      *   y        |  Number   |矩形区域左上角的y坐标
-     *   width    |  Number   | 矩形区域的宽度 
-     *   height   |  Number   | 矩形区域的高度 
+     *   width    |  Number   | 矩形区域的宽度
+     *   height   |  Number   | 矩形区域的高度
      *
      * **定义：**
      *
@@ -12583,7 +12583,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数 |  类型     |  说明       
+     *   参数 |  类型     |  说明
      * -------|-----------|-------------
      *   x    |  Number   |目标位置的x坐标
      *   y    |  Number   |目标位置的y坐标
@@ -12612,7 +12612,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数 |  类型     |  说明       
+     *   参数 |  类型     |  说明
      * -------|-----------|-------------
      *   x    |  Number   |目标位置的x坐标
      *   y    |  Number   |目标位置的y坐标
@@ -12641,13 +12641,13 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数               |  类型      |  说明                                 
+     *   参数               |  类型      |  说明
      * ---------------------|------------|---------------------------------------
-     *   x                  |  Number    |  圆的x坐标                            
-     *   y                  |  Number    |  圆的y坐标                            
-     *   r                  |  Number    |  圆的半径                             
-     *   sAngle             |  Number    |  起始弧度，单位弧度（在3点钟方向）    
-     *   eAngle             |  Number    |  终止弧度                             
+     *   x                  |  Number    |  圆的x坐标
+     *   y                  |  Number    |  圆的y坐标
+     *   r                  |  Number    |  圆的半径
+     *   sAngle             |  Number    |  起始弧度，单位弧度（在3点钟方向）
+     *   eAngle             |  Number    |  终止弧度
      *   counterclockwise   |  Boolean   |可选。指定弧度的方向是逆时针还是顺时针。默认是false，即顺时针。
      *
      * **例子：**
@@ -12711,14 +12711,14 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数   |  类型     |  说明              
+     *   参数   |  类型     |  说明
      * ---------|-----------|--------------------
      *   cp1x   |  Number   |第一个贝塞尔控制点的 x 坐标
      *   cp1y   |  Number   |第一个贝塞尔控制点的 y 坐标
      *   cp2x   |  Number   |第二个贝塞尔控制点的 x 坐标
      *   cp2y   |  Number   |第二个贝塞尔控制点的 y 坐标
-     *   x      |  Number   |  结束点的 x 坐标   
-     *   y      |  Number   |  结束点的 y 坐标   
+     *   x      |  Number   |  结束点的 x 坐标
+     *   y      |  Number   |  结束点的 y 坐标
      *
      * **例子：**
      *
@@ -12778,12 +12778,12 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数  |  类型     |  说明         
+     *   参数  |  类型     |  说明
      * --------|-----------|---------------
      *   cpx   |  Number   |贝塞尔控制点的x坐标
      *   cpy   |  Number   |贝塞尔控制点的y坐标
-     *   x     |  Number   | 结束点的x坐标 
-     *   y     |  Number   | 结束点的y坐标 
+     *   x     |  Number   | 结束点的x坐标
+     *   y     |  Number   | 结束点的y坐标
      *
      * **例子：**
      *
@@ -12836,7 +12836,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数          |  类型     |  说明                                      
+     *   参数          |  类型     |  说明
      * ----------------|-----------|--------------------------------------------
      *   scaleWidth    |  Number   |横坐标缩放的倍数 (1 = 100%，0.5 = 50%，2 = 200%)
      *   scaleHeight   |  Number   |纵坐标轴缩放的倍数 (1 = 100%，0.5 = 50%，2 = 200%)
@@ -12864,7 +12864,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数     |  类型     |  说明                                               
+     *   参数     |  类型     |  说明
      * -----------|-----------|-----------------------------------------------------
      *   rotate   |  Number   |旋转角度，以弧度计(degrees * Math.PI/180；degrees范围为0~360)
      *
@@ -12893,7 +12893,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数 |  类型     |  说明      
+     *   参数 |  类型     |  说明
      * -------|-----------|------------
      *   x    |  Number   |水平坐标平移量
      *   y    |  Number   |竖直坐标平移量
@@ -12948,7 +12948,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数       |  类型     |  说明    
+     *   参数       |  类型     |  说明
      * -------------|-----------|----------
      *   fontSize   |  Number   |字体的字号
      *
@@ -12978,7 +12978,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数       |  类型     |  说明            
+     *   参数       |  类型     |  说明
      * -------------|-----------|------------------
      *   text       |  String   |在画布上输出的文本
      *   x          |  Number   |绘制文本的左上角x坐标位置
@@ -13007,7 +13007,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数    |  类型     |  定义                          
+     *   参数    |  类型     |  定义
      * ----------|-----------|--------------------------------
      *   align   |  String   |可选值 'left'、'center'、'right'
      *
@@ -13051,7 +13051,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数           |  类型     |  定义                                   
+     *   参数           |  类型     |  定义
      * -----------------|-----------|-----------------------------------------
      *   textBaseline   |  String   |可选值 'top'、'bottom'、'middle'、'normal'
      *
@@ -13098,17 +13098,17 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数            |  类型     |  说明                         
+     *   参数            |  类型     |  说明
      * ------------------|-----------|-------------------------------
-     *   imageResource   |  String   |  所要绘制的图片资源           
+     *   imageResource   |  String   |  所要绘制的图片资源
      *   dx              |  Number   |图像的左上角在目标canvas上 X 轴的位置
      *   dy              |  Number   |图像的左上角在目标canvas上 Y 轴的位置
      *   dWidth          |  Number   |在目标画布上绘制图像的宽度，允许对绘制的图像进行缩放
      *   dHeight         |  Number   |在目标画布上绘制图像的高度，允许对绘制的图像进行缩放
      *   sx              |  Number   |源图像的矩形选择框的左上角 X 坐标
      *   sy              |  Number   |源图像的矩形选择框的左上角 Y 坐标
-     *   sWidth          |  Number   |  源图像的矩形选择框的宽度     
-     *   sHeight         |  Number   |  源图像的矩形选择框的高度     
+     *   sWidth          |  Number   |  源图像的矩形选择框的宽度
+     *   sHeight         |  Number   |  源图像的矩形选择框的高度
      *
      * **有三个版本的写法：**
      *
@@ -13129,7 +13129,7 @@ declare namespace wx {
      *     })
      *     ```
      */
-    drawImage(dx: number, dy: number): void
+    drawImage(imageResource: string, dx: number, dy: number): void
     /**
      *
      * **定义：**
@@ -13138,17 +13138,17 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数            |  类型     |  说明                         
+     *   参数            |  类型     |  说明
      * ------------------|-----------|-------------------------------
-     *   imageResource   |  String   |  所要绘制的图片资源           
+     *   imageResource   |  String   |  所要绘制的图片资源
      *   dx              |  Number   |图像的左上角在目标canvas上 X 轴的位置
      *   dy              |  Number   |图像的左上角在目标canvas上 Y 轴的位置
      *   dWidth          |  Number   |在目标画布上绘制图像的宽度，允许对绘制的图像进行缩放
      *   dHeight         |  Number   |在目标画布上绘制图像的高度，允许对绘制的图像进行缩放
      *   sx              |  Number   |源图像的矩形选择框的左上角 X 坐标
      *   sy              |  Number   |源图像的矩形选择框的左上角 Y 坐标
-     *   sWidth          |  Number   |  源图像的矩形选择框的宽度     
-     *   sHeight         |  Number   |  源图像的矩形选择框的高度     
+     *   sWidth          |  Number   |  源图像的矩形选择框的宽度
+     *   sHeight         |  Number   |  源图像的矩形选择框的高度
      *
      * **有三个版本的写法：**
      *
@@ -13169,7 +13169,7 @@ declare namespace wx {
      *     })
      *     ```
      */
-    drawImage(dx: number, dy: number, dWidth: number, dHeight: number): void
+    drawImage(imageResource: string, dx: number, dy: number, dWidth: number, dHeight: number): void
     /**
      *
      * **定义：**
@@ -13178,17 +13178,17 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数            |  类型     |  说明                         
+     *   参数            |  类型     |  说明
      * ------------------|-----------|-------------------------------
-     *   imageResource   |  String   |  所要绘制的图片资源           
+     *   imageResource   |  String   |  所要绘制的图片资源
      *   dx              |  Number   |图像的左上角在目标canvas上 X 轴的位置
      *   dy              |  Number   |图像的左上角在目标canvas上 Y 轴的位置
      *   dWidth          |  Number   |在目标画布上绘制图像的宽度，允许对绘制的图像进行缩放
      *   dHeight         |  Number   |在目标画布上绘制图像的高度，允许对绘制的图像进行缩放
      *   sx              |  Number   |源图像的矩形选择框的左上角 X 坐标
      *   sy              |  Number   |源图像的矩形选择框的左上角 Y 坐标
-     *   sWidth          |  Number   |  源图像的矩形选择框的宽度     
-     *   sHeight         |  Number   |  源图像的矩形选择框的高度     
+     *   sWidth          |  Number   |  源图像的矩形选择框的宽度
+     *   sHeight         |  Number   |  源图像的矩形选择框的高度
      *
      * **有三个版本的写法：**
      *
@@ -13209,7 +13209,7 @@ declare namespace wx {
      *     })
      *     ```
      */
-    drawImage(sx: number, sy: number, sWidth: number, sHeight: number, dx: number, dy: number, dWidth: number, dHeight: number): void
+    drawImage(imageResource: string, sx: number, sy: number, sWidth: number, sHeight: number, dx: number, dy: number, dWidth: number, dHeight: number): void
     /**
      *
      * **定义：**
@@ -13218,7 +13218,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数    |  类型     |  范围  |  说明                     
+     *   参数    |  类型     |  范围  |  说明
      * ----------|-----------|--------|---------------------------
      *   alpha   |  Number   |  0~1   |透明度，0 表示完全透明，1 表示完全不透明
      *
@@ -13265,7 +13265,7 @@ declare namespace wx {
      *     const ctx = wx.createCanvasContext('myCanvas')
      *
      *     // save the default fill style
-     *     ctx.save() 
+     *     ctx.save()
      *     ctx.setFillStyle('red')
      *     ctx.fillRect(10, 10, 150, 100)
      *
@@ -13287,10 +13287,10 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数       |  类型       |  说明                                                                                                                                       | 最低版本 
+     *   参数       |  类型       |  说明                                                                                                                                       | 最低版本
      * -------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------
-     *   reserve    |  Boolean    |非必填。本次绘制是否接着上一次绘制，即reserve参数为false，则在本次调用drawCanvas绘制之前native层应先清空画布再继续绘制；若reserver参数为true，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false|          
-     *   callback   |  Function   |  绘制完成后回调                                                                                                                             |  1.7.0   
+     *   reserve    |  Boolean    |非必填。本次绘制是否接着上一次绘制，即reserve参数为false，则在本次调用drawCanvas绘制之前native层应先清空画布再继续绘制；若reserver参数为true，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false|
+     *   callback   |  Function   |  绘制完成后回调                                                                                                                             |  1.7.0
      *
      * **例子：**
      *
@@ -13326,7 +13326,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   参数   |  类型     |  说明     
+     *   参数   |  类型     |  说明
      * ---------|-----------|-----------
      *   text   |  String   |要测量的文本
      *
@@ -13334,7 +13334,7 @@ declare namespace wx {
      *
      * 返回 TextMetrics 对象，结构如下：
      *
-     *   参数    |  类型     |  说明    
+     *   参数    |  类型     |  说明
      * ----------|-----------|----------
      *   width   |  Number   |文本的宽度
      *
@@ -13357,16 +13357,16 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值 |  类型     |  说明               
+     *   属性值 |  类型     |  说明
      * ---------|-----------|---------------------
      *   type   |  String   |标识要使用哪种合成或混合模式操作
      *
      * **type 支持的操作有：**
      *
-     *   平台  |  操作                                                                                                                                                                                                            
+     *   平台  |  操作
      * --------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     *   安卓  |  xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light                                                                                                                   
-     *   iOS   |  xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity   
+     *   安卓  |  xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light
+     *   iOS   |  xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity
      *
      * **Bug**: 目前安卓版本只适用于 fill 填充块的合成，用于 stroke 线段的合成效果都是 source-over
      *
@@ -13386,13 +13386,13 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值   |  类型     |  说明            
+     *   属性值   |  类型     |  说明
      * -----------|-----------|------------------
      *   x1       |  Number   |第一个控制点的 x 轴坐标
      *   y1       |  Number   |第一个控制点的 y 轴坐标
      *   x2       |  Number   |第二个控制点的 x 轴坐标
      *   y2       |  Number   |第二个控制点的 y 轴坐标
-     *   radius   |  Number   |  圆弧的半径      
+     *   radius   |  Number   |  圆弧的半径
      *
      * **语法：**
      *
@@ -13410,9 +13410,9 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值     |  类型     |  说明           
+     *   属性值     |  类型     |  说明
      * -------------|-----------|-----------------
-     *   text       |  String   |  要绘制的文本   
+     *   text       |  String   |  要绘制的文本
      *   x          |  Number   |文本起始点的 x 轴坐标
      *   y          |  Number   |文本起始点的 y 轴坐标
      *   maxWidth   |  Number   |需要绘制的最大宽度，可选
@@ -13433,7 +13433,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值  |  类型     |  说明         
+     *   属性值  |  类型     |  说明
      * ----------|-----------|---------------
      *   value   |  Number   |偏移量，初始值为 0
      *
@@ -13453,9 +13453,9 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值       |  类型     |  说明                                                   
+     *   属性值       |  类型     |  说明
      * ---------------|-----------|---------------------------------------------------------
-     *   image        |  String   |  重复的图像源，仅支持包内路径和临时路径                 
+     *   image        |  String   |  重复的图像源，仅支持包内路径和临时路径
      *   repetition   |  String   |指定如何重复图像，有效值有: repeat, repeat-x, repeat-y, no-repeat
      *
      * **语法：**
@@ -13484,17 +13484,17 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值  |  类型     |  说明                                                                 
+     *   属性值  |  类型     |  说明
      * ----------|-----------|-----------------------------------------------------------------------
      *   value   |  String   |符合 CSS font 语法的 DOMString 字符串，至少需要提供字体大小和字体族名。默认值为 10px sans-serif
      *
      * **value 支持的属性有：**
      *
-     *   属性     |  说明                               
+     *   属性     |  说明
      * -----------|-------------------------------------
      *   style    |字体样式。仅支持 italic, oblique, normal
-     *   weight   |  字体粗细。仅支持 normal, bold      
-     *   size     |  字体大小                           
+     *   weight   |  字体粗细。仅支持 normal, bold
+     *   size     |  字体大小
      *   family   | 字体族名。注意确认各平台所支持的字体
      *
      * **语法：**
@@ -13513,7 +13513,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值       |  类型     |  说明   
+     *   属性值       |  类型     |  说明
      * ---------------|-----------|---------
      *   scaleX       |  Number   | 水平缩放
      *   skewX        |  Number   | 水平倾斜
@@ -13538,7 +13538,7 @@ declare namespace wx {
      *
      * **参数：**
      *
-     *   属性值       |  类型     |  说明   
+     *   属性值       |  类型     |  说明
      * ---------------|-----------|---------
      *   scaleX       |  Number   | 水平缩放
      *   skewX        |  Number   | 水平倾斜
